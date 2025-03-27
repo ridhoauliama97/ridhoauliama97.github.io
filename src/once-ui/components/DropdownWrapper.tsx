@@ -53,7 +53,7 @@ const DropdownWrapper = forwardRef<HTMLDivElement, DropdownWrapperProps>(
       className,
       style,
     },
-    ref,
+    ref
   ) => {
     const wrapperRef = useRef<HTMLDivElement>(null);
     const dropdownRef = useRef<HTMLDivElement | null>(null);
@@ -118,13 +118,19 @@ const DropdownWrapper = forwardRef<HTMLDivElement, DropdownWrapperProps>(
     }, [isOpen, mounted, refs, update]);
 
     const handleClickOutside = (event: MouseEvent) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target as Node)
+      ) {
         handleOpenChange(false);
       }
     };
 
     const handleFocusOut = (event: FocusEvent) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(event.relatedTarget as Node)) {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.relatedTarget as Node)
+      ) {
         handleOpenChange(false);
       }
     };
@@ -193,7 +199,7 @@ const DropdownWrapper = forwardRef<HTMLDivElement, DropdownWrapperProps>(
         )}
       </Flex>
     );
-  },
+  }
 );
 
 DropdownWrapper.displayName = "DropdownWrapper";

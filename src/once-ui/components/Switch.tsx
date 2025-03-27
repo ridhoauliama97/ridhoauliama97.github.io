@@ -34,7 +34,7 @@ const Switch: React.FC<SwitchProps> = forwardRef<HTMLInputElement, SwitchProps>(
       value,
       ...props
     },
-    ref,
+    ref
   ) => {
     const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
       if (!disabled && (event.key === "Enter" || event.key === " ")) {
@@ -95,7 +95,7 @@ const Switch: React.FC<SwitchProps> = forwardRef<HTMLInputElement, SwitchProps>(
         {props.label && <InteractiveDetails {...props} onClick={() => {}} />}
       </Flex>
     );
-  },
+  }
 );
 
 Switch.displayName = "Switch";

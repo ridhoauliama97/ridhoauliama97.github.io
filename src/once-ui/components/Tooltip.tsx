@@ -47,7 +47,7 @@ const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(
         {suffixIcon && <Icon name={suffixIcon} size="xs" />}
       </Flex>
     );
-  },
+  }
 );
 
 Tooltip.displayName = "Tooltip";

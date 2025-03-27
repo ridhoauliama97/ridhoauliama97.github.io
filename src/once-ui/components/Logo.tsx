@@ -40,7 +40,7 @@ const Logo: React.FC<LogoProps> = ({
   useEffect(() => {
     if (!icon && !wordmark) {
       console.warn(
-        "Both 'icon' and 'wordmark' props are set to false. The logo will not render any content.",
+        "Both 'icon' and 'wordmark' props are set to false. The logo will not render any content."
       );
     }
   }, [icon, wordmark]);
@@ -88,7 +88,12 @@ const Logo: React.FC<LogoProps> = ({
 
   return href ? (
     <Link
-      className={classNames("radius-l", "display-flex", "fit-height", className)}
+      className={classNames(
+        "radius-l",
+        "display-flex",
+        "fit-height",
+        className
+      )}
       style={style}
       href={href}
       aria-label="Trademark"
