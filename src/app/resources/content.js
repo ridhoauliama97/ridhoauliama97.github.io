@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the
-      intersection of creativity and engineering.
+      I occasionally write about web design, technology, and share thoughts on
+      the intersection of creativity and engineering.
     </>
   ),
 };
@@ -253,7 +253,7 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about web design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
